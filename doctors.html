@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nunito" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="app.jss"></script>
+    <link rel="stylesheet" href="./css/doctors.css">
+    <title>home</title>
+  </head>
+  <style>
+    #peopledetails {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      
+    }
+  
+    #patientBox {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    }
+  
+    #details, #history {
+      margin-top: 20px;
+    }
+    #patientBox h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 49px;
+    color: #4c1a33;
+    }
+  
+    #details, #history p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 49px;
+    color: #4c1a33;
+    }
+    #historyList {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    #historyList li {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 49px;
+      color: #4c1a33;
+    }
+  
+  </style>
+
+
+  <body ng-controller="testCtrl">
+    <header class="main-header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg main-nav px-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logo1.png" alt="sharonniteoutreach">
+          </a>
+          <div class="menuToggle" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu();">
+            <label for="check">
+              <input type="checkbox" id="check"/> 
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>                      
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navigations">
+              <li>
+                <a href="index.html" class="active active-first">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="admin.html">Admin</a>
+              </li>
+              <li>
+                <a href="doctors.html">Doctors</a>
+              </li>
+              <li>
+                <a href="people.html">People</a>
+              </li> 
+              <li>
+                <a href="appointment.html">Appointment</a>
+              </li>
+              
+            </ul>
+            <a href="register.html" class="button">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+ 
+    <main class=" top-mag" >
+    <!--=========== Doctors SECTION ================-->
+    
+     <section>
+      <div class="doctors-section">
+        <h2>Meet Our Doctors</h2>
+
+        <div class="doctors-card mt-5">
+
+          <!-- first row-->
+          <div class="row first">
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5> Dr.Mable Elvis</h5>
+                  <p>Psychiatry</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Dr. Patrick Jones</h5>
+                  <p>Anesthesiology</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>DR. Sarah J. Mike</h5>
+                  <p>Physical therapy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- second row-->
+          <div class="row second">
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Dr. Meghan Bright</h5>
+                  <p>Obstetrics and Gynaecology</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5> Dr.Francis Neon</h5>
+                  <p>Cardiology</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Dr. Grace M. Tom</h5>
+                  <p>Internal Medicine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--third row-->
+          <div class="row third">
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Dr Vincent Raji</h5>
+                  <p>Neurology</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Davies Williams</h5>
+                  <p>Pediatrics</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md col-sm cards card second">
+              <div class="top">
+                <div class="middle"></div>
+                <div class="bottom">
+                  <h5>Dr. Henry John</h5>
+                  <p>Surgery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+      <!--=========== End Doctors SECTION ================-->
+      <div id="pepoledetails">
+        <div id="patientBox">
+          <h2>Patient Details</h2>
+          <div id="details">
+            <p><strong>Name:</strong> <span id="patientName">""</span></p>
+            <p><strong>Age:</strong> <span id="patientAge">""</span></p>
+            <!-- Add more patient details as needed -->
+          </div>
+          <h2>Medical Note</h2>
+          <div id="history">
+            <ul id="historyList">
+              <li>Appointment on 2023-01-01</li>
+              <li>Prescription: Ibuprofen</li>
+              <li>Prescription:  ""</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+   
+    <!------------ Footer-Section ---------->
+    <footer id="contact">
+      <div class=" footer">
+        <div class="row mb-4 ">
+          <!--- Social-media --->
+          <div class="col-md-4 col-sm">
+            <div class="footer-social">
+              <div class="">
+                <img src="./images/logo1.png" alt="">
+              </div>  
+              <div class="social ">
+                <ul class="social_footer">
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--- Services --->
+          <div class="col-md-6 contact">
+            <p>Get In Touch</p>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <!-- <h5 class="heading">Courses</h5> -->
+                <ul class="services">
+                  <h5 class="heading mb-3">Services</h5>
+                  <li>Cardic Monitoring </li>
+                  <li>Rehabilitation</li>
+                  <li>General Care</li>
+                  <li>Surgery</li>
+                </ul>
+              </div>
+
+              <hr>
+                
+              <!------ Address ------->
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <!-- <h5 class="heading">Contact</h5> -->
+                <ul class="addr">
+                  <h5 class="heading mb-3">Contact</h5>
+                  <li>
+                    <span class="iconify" data-icon="carbon:location-filled" ></span>
+                    <p>47 Marc  <br> Flic en Flac, <br> Mauritius.</p>
+                  </li><br>
+                  <li>
+                    <span class="iconify" data-icon="fluent:mail-48-filled" ></span>
+                    <p>mail.sharroniteoutreach.com</p>
+                  </li><br>
+                  <li>
+                    <span class="iconify" data-icon="bx:bxs-phone" ></span>
+                    <p>57740321</p>
+                  </li>      
+                </ul>
+              </div>
+
+            </div>
+          </div>            
+        </div>
+        
+        <hr>
+        <!--- Privacy Policy--->
+        <div class="row mx-5" >
+          <div class="col-md-6 col-sm">
+            <div class="pull-left copyright">
+              <p><i class="fa fa-copyright"></i> 2023 sharonniteoutreach</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm">
+            <div class="policy">
+              <div class="list" >Terms of Use</div>
+              <div class="list" >Privacy Policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!--=========== End Footer SECTION ================-->
+    
+    
+  </body>
+</html>

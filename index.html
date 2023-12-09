@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nunito" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <title>home</title>
+  </head>
+
+
+
+  <body ng-controller="testCtrl">
+    <header class="main-header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg main-nav px-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logo1.png" alt="sharonniteoutreach">
+          </a>
+          <div class="menuToggle" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu();">
+            <label for="check">
+              <input type="checkbox" id="check"/> 
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>                      
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navigations">
+              <li>
+                <a href="index.html" class="active active-first">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="admin.html">Admin</a>
+              </li>
+              <li>
+                <a href="doctors.html">Doctors</a>
+              </li>
+        
+              <li>
+                <a href="appointment.html">Appointment</a>
+              </li> 
+              <li>
+                <a href="people.html">People</a>
+              </li>    
+            </ul>
+            <a href="register.html" class="button">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+      
+    <main>
+      <!------ Landing ------->
+      <section>
+        <div class="main-section">
+          <div class="landing-page">
+            <div class="text">
+              <h3>We<span> provide </span> the best health care services </h3>
+            </div>    
+          </div>
+        </div>
+      </section>
+      <section id="topFeature">
+        <div class="row">
+          <!-- Start Single Top Feature -->
+          <div class="col-lg-4 col-md-4">
+            <div class="row">
+              <div class="single-top-feature">
+                <span class="fa fa-flask"></span>
+                <h3>Emergency Care</h3>
+                <p>We have immediate medical treatment provided after the onset of a medical condition or injury. Which include our life-saving measures, such as CPR and intravenous drug administration,to stabilize patients for further treatment.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Top Feature -->
+       <div class="col-lg-4 col-md-4">
+        <div class="row">
+          <div class="single-top-feature">
+            <span class="fa fa-hospital-o"></span>
+            <h3>Appointment</h3>
+            <p>Visit us today to book an appointment with our qualified medical practitioners.</p>
+          </div>
+        </div>
+      </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="row">
+              <div class="single-top-feature opening-hours">
+                <span class="fa fa-clock-o"></span>
+                <h3>Opening Hours</h3>
+                <p>We work round the clock call in anytime to book an appointment with our health care providers.</p>
+                <ul class="opening-table">
+                  <li>
+                    <span>Monday - Friday</span>
+                    <div class="value">8.00 - 16.00</div>
+                  </li>
+                  <li>
+                    <span>Saturday</span>
+                    <div class="value">9.30 - 15.30</div>
+                  </li>
+                  <li>
+                    <span>Sunday</span>
+                    <div class="value">9.30 - 17.00</div>
+                  </li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+          <!-- End Single Top Feature -->
+        </div>
+      </section>
+      <!--=========== END Top Feature SECTION ================-->
+ <!------ Services ------->
+ <section class="services-section">
+  <div class="services-content container-fluid">
+    <div class="text-div mb-5">
+      <h6 class="">Our Services</h6> 
+    </div>
+    <div class="services">
+      <div class="row">
+        <div class="col-md-4 col-sm" >
+          <img src="./images/photo6.jpeg" alt="">
+        </div>
+        <div class="col-md-6 col-sm ml-5" >
+          <h4>Cardio Monitoring</h4>
+          <p>Cardiac monitoring is a system that allows our doctors, nurses and technicians to continuously view the activity of your heart.</p>
+          <a href="register.html" class="button ">Learn More</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row second">
+        <div class="col-md-6 col-sm" >
+          <h4>Special Doctor</h4>
+          <p>Specialist doctors play a crucial role in providing more in-depth and specialized care for patients with complex or specific health issues.</p>
+          <a href="register.html" class="button ">Learn More</a>
+        </div>
+        <div class="col-md-4 col-sm ml-5" >
+          <img src="./images/photo8.jpeg" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 col-sm" >
+          <img src="./images/rehab.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-sm ml-5" >
+          <h4>Rehabilitation Therapy</h4>
+          <p>Therapy and treatments to help patients recover from injuries or surgeries and regain their physical or mental function.</p>
+          <a href="register.html" class="button ">Learn More</a>
+
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+
+   
+       <!--=========== BEGAIN Why Choose Us SECTION ================-->
+ <section class="services-section">
+  <div class="services-content container-fluid">
+    <div class="text-div mb-5">
+      <h6 class="">Why Choose Us</h6> 
+    </div>
+    <div class="services">
+      <div class="row">
+        <div class="col-md-4 col-sm" >
+          <img src="./images/photo9.jpeg" alt="">
+        </div>
+        <div class="col-md-6 col-sm ml-5" >
+          <h4>Great Infrastructure</h4>
+          <p>have modern medical equipment, well-designed patient rooms, advanced technology for medical procedures, and efficient communication systems between staff and patients.</p>
+          <a href="register.html" class="button ">Learn More</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row second">
+        <div class="col-md-6 col-sm" >
+          <h4>Qualified Doctors</h4>
+          <p>Our doctors have extensive medical knowledge and expertise in their respective fields. They are skilled in diagnosing and treating various medical conditions..</p>
+          <a href="register.html" class="button ">Learn More</a>
+        </div>
+        <div class="col-md-4 col-sm ml-5" >
+          <img src="./images/photo3.jpeg" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 col-sm" >
+          <img src="./images/photo4.webp" alt="">
+        </div>
+        <div class="col-md-6 col-sm ml-5" >
+          <h4>Emergency Support</h4>
+          <p>Emergency support in hospitals is crucial in providing life-saving care to patients in critical conditions. The highly trained medical staff and advanced medical equipment ensure that patients receive timely and effective treatment..</p>
+          <a href="register.html" class="button ">Learn More</a>
+
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+    
+      <!--=========== END Why Choose Us SECTION ================-->
+    </main>
+<br>
+<br>
+
+  
+    <!------------ Footer-Section ---------->
+    <footer id="contact">
+      <div class=" footer">
+        <div class="row mb-4 ">
+          <!--- Social-media --->
+          <div class="col-md-4 col-sm">
+            <div class="footer-social">
+              <div class="">
+                <img src="./images/logo1.png" alt="">
+              </div>  
+              <div class="social ">
+                <ul class="social_footer">
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--- Services --->
+          <div class="col-md-6 contact">
+            <p>Get In Touch</p>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <!-- <h5 class="heading">Courses</h5> -->
+                <ul class="services">
+                  <h5 class="heading mb-3">Services</h5>
+                  <li>Cardic Monitoring </li>
+                  <li>Rehabilitation</li>
+                  <li>General Care</li>
+                  <li>Surgery</li>
+                </ul>
+              </div>
+
+              <hr>
+                
+              <!------ Address ------->
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <!-- <h5 class="heading">Contact</h5> -->
+                <ul class="addr">
+                  <h5 class="heading mb-3">Contact</h5>
+                  <li>
+                    <span class="iconify" data-icon="carbon:location-filled" ></span>
+                    <p>47 Marc  <br> Flic en Flac, <br> Mauritius.</p>
+                  </li><br>
+                  <li>
+                    <span class="iconify" data-icon="fluent:mail-48-filled" ></span>
+                    <p>mail.sharroniteoutreach.com</p>
+                  </li><br>
+                  <li>
+                    <span class="iconify" data-icon="bx:bxs-phone" ></span>
+                    <p>57740321</p>
+                  </li>      
+                </ul>
+              </div>
+
+            </div>
+          </div>            
+        </div>
+        
+        <hr>
+        <!--- Privacy Policy--->
+        <div class="row mx-5" >
+          <div class="col-md-6 col-sm">
+            <div class="pull-left copyright">
+              <p><i class="fa fa-copyright"></i> 2023 sharonniteoutreach</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm">
+            <div class="policy">
+              <div class="list" >Terms of Use</div>
+              <div class="list" >Privacy Policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!--=========== End Footer SECTION ================-->
+                 
+  </body>
+</html>
