@@ -45,4 +45,4 @@ Our hospital offers various services including:
 • Radiology and Diagnostic Imaging 
 • Laboratory Services 
 • Rehabilitation 
-
+This website is still in the development stage will be completed to have a full functionality.
