@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/nunito');
+
+
+body, html{
+  min-height:100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+    
+}
+
+/* main-header start */
+.top-mag{
+    padding-top: 172px;
+  }
+[data-target="#mainMenu"] {
+  position: relative;
+  z-index: 999;
+}
+
+.main-header {
+  background-color: #4c1a33;
+  position: fixed;
+  top: -33px;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.navbar{
+  margin: 0 8%;
+}
+
+.main-header.sticky{
+  background: #ffffff;
+  padding: 5px 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  height: 20vh;
+  z-index: 999;
+}
+
+.main-header.sticky #mainMenu li > a{
+  color: #7e375b;
+}
+.main-header.sticky .navbar-brand img{
+  width: 150px;
+  height: 130px;
+  left:80px;
+  top: 10px;
+}
+
+label{
+  visibility: hidden;
+}
+
+#mainMenu li{
+  margin-right: 50px;
+}
+
+#mainMenu li > a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding-top: 1%;
+  text-align: center;
+}
+
+#mainMenu li > a::before {
+  position: absolute;
+  content: "";
+  background: #77274f;
+  bottom: -18px;
+  transform: scale(0, 0);
+  z-index: -1;
+  -webkit-transition: transform 0.8s ease-in-back;
+  transition-duration:0.8s ease-in-back;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  left:calc(50% - 8px);
+}
+
+#mainMenu li > a:hover::before,
+#mainMenu li > a.active::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  left:calc(50% - 8px);
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+.top-mag{
+    padding-top: 148px;
+  }
+
+#mainMenu a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: #ffffff;
+  width: 125px;
+  height: 48px;
+  text-align: center;
+  background-color: #77274f;
+  padding: 1%; 
+  border-radius: 8px;
+}
+#mainMenu a.button:hover{
+  background-color: #ffffff00;
+  color: #ffffff;
+  border: 2px solid #77274f;
+  /* font-size: 18px; */
+  font-weight: bold;
+  /* padding: 0; */
+  
+}
+
+
+.landing-page .text{
+  text-align: center;
+  width: 481px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 13% 0 0 0;
+}
+.landing-page .text h3 span{
+  color: #77274f;
+}
+.main-section{
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.main-section .landing-page{
+  display: flex;
+  justify-content: center;
+}
+.landing-page .text{
+  text-align: center;
+  width: 481px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 13% 0 0 0;
+  padding-top: 100px;
+
+}
+
+.landing-page .text h3{
+  font-family: 'Nunito' sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.landing-page .text h3 span{
+  color: #ffffff;
+}
+
+  .navbar-brand img {
+    width: 130px;
+    height: 110px;
+  }
+  .main-header.sticky {
+    height: 23vh;
+    padding: 0;
+  }
+  .main-header .navbar {
+    margin: 5% 5% 0 5%;
+  }
+  
+  .landing-page .text .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+  .landing-page .text .row a {
+    margin: 3% 0;
+  }
+
+
+/* style for our doctors Section*/
+.doctors-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 8% auto;
+    font-family: 'Nunito' sans-serif;
+  } 
+  
+  .doctors-section h2{
+     
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #4c1a33;
+  }
+  .doctors-card{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .doctors-card .row .cards{
+    width: 360px;
+    height: 520px;  
+    background: #FFFFFF;
+    box-shadow: -10px -10px 30px 4px rgba(0,0,0,0.1), 10px 10px 30px 4px rgba(45,78,255,0.15);
+    border-radius: 12px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transform: scale(1.05);
+    transition: transform 2.5s ease-in-out;
+  }
+  .doctors-card .row .card{
+    margin-top: 8%;
+  }
+  .doctors-card .row .cards .top{
+    width: 360px;
+    height: 170px;
+    background: #4c1a33;
+    border-radius: 12px 12px 0px 0px;
+  }
+  
+  .cards .middle{
+    width: 250px;
+    height: 250px;
+    background-image: "";
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+  }
+  
+  .first .cards:nth-child(1) .middle{
+    background-image: url('../images/doctor1.jpg');
+  }
+  .first .cards:nth-child(2) .middle{
+    background-image: url('../images/doctor2.jpg');
+  }
+  .first .cards:nth-child(3) .middle{
+    background-image: url('../images/doctor3.jpg');
+  }
+  .second .cards:nth-child(1) .middle{
+    background-image: url('../images/doctor4.jpg');
+  }
+  .second .cards:nth-child(2) .middle{
+    background-image: url('../images/doctor5.jpg');
+  }
+  .second .cards:nth-child(3) .middle{
+    background-image: url('../images/doctor6.jpg');
+  }
+  .third .cards:nth-child(1) .middle{
+    background-image: url('../images/doctor7.jpg');
+  }
+  .third .cards:nth-child(2) .middle{
+    background-image: url('../images/doctor8.jpg');
+  }
+  .third .cards:nth-child(3) .middle{
+    background-image: url('../images/doctor10.webp');
+  }
+  
+  
+  .cards .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  
+  }
+  .cards .bottom h5{
+    font-family: 'Nunito' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 49px;
+    color: #444444;
+  }
+  
+  .cards .bottom p{
+    font-family: 'Nunito' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #444444;
+  }
+
+/*-------------- Footer Section ----------*/
+footer {
+    color: #ffffff;
+    background-color: #4c1a33
+  }
+  
+  .footer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer-social {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+  }
+  
+  .footer-social img{
+    width: 170px;
+    height: 170px;
+    margin-top: 10%;
+  }
+  
+  footer ul>li {
+    list-style: none;
+  }
+  
+  footer hr {
+    border-width: 3px
+  }
+  
+  footer .social{
+    margin: 10% auto;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  
+  
+  .social_footer {
+    display:flex;
+    list-style-type:none;
+    
+  }
+  .social_footer li {
+    margin-top: 10%;
+    margin-left: 30px;
+  }
+  
+  .social_footer li a {
+    color:#4c1a33;
+    padding:8px;
+    border-radius:50%;
+    background-color: #ffffff;
+    font-size: 24px;
+  }
+  
+  .social_footer li i {
+    width:36px; 
+    height:36px; 
+    text-align:center;
+  }
+  
+  .social_footer li a:hover {
+    color:#ffffff;
+    border:2px solid #ffffff; 
+    background-color: #4c1a33;
+  }
+  
+  footer .contact{
+    margin: 5% 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  
+  footer .contact p{
+    font-size: 48px;
+    font-family: 'Nunito' sans-serif;
+    font-style: normal;
+    line-height: 65px
+  }
+  
+  footer .contact .row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8% 0;
+    margin-left: -6%;
+    flex-wrap: nowrap  
+  }
+  
+  .contact .row hr{
+    visibility: hidden;
+  }
+  
+  footer .contact .row .services li{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    line-height: 2.5rem;
+    white-space: nowrap;
+  }
+  
+  footer .heading ul {
+    margin-top: 5%;
+  }
+  
+  footer .heading {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .contact .row .addr .heading{
+    margin-left: -80px;
+  }
+  
+  footer .addr li {
+    display: flex;
+    flex-direction: row;
+    margin-left: -100px;
+  }
+  
+  footer .addr li .iconify{
+    color: white;
+    font-size: 30px;
+    margin: 0 3% 0 0;
+  }
+  
+  footer .addr li p{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5rem;  
+  }
+  
+  footer hr {
+    border: 1px solid rgba(255, 255, 255, .3);
+    width: 100%;
+  }
+  
+  footer .copyright{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 15%;
+    white-space: nowrap;
+  }
+  
+  footer .policy{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    float: right;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+    white-space: nowrap;
+  }
+  
+  footer .policy .list{
+    margin: 0 20%;
+  }  

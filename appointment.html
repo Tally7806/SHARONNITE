@@ -1,0 +1,240 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="./css/appointment.css">
+    <title>appointment</title>
+  </head>
+  
+  <body ng-controller="testCtrl">
+    <header class="main-header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg main-nav px-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logo1.png" alt="sharonniteoutreach">
+          </a>
+          <div class="menuToggle" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu();">
+         
+          </div>                      
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto navigations">
+              <li>
+                <a href="index.html" class="active active-first">Home</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="admin.html">Admin</a>
+              </li>
+              <li>
+                <a href="doctors.html">Doctors</a>
+              </li>
+              <li>
+                <a href="people.html">People</a>
+              </li> 
+              <li>
+                <a href="appointment.html">Appointment</a>
+              </li> 
+              
+            </ul>
+            <a href="register.html" class="button">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+<!-- Start Single Top Feature -->
+<main class=" top-mag">
+<div class="container3" >
+    <div class="row3">
+      <div class="card-body">
+        <span class="fa fa-hospital-o"></span>
+        <h2>Appointment</h2>
+        <p>Visit us today to book an appointment with our qualified medical practitioners.</p>
+      </div>
+    </div>
+                <div class="form-class">
+                  <form id="appt-form">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address">
+                    <label for="date">date</label>
+                    <input type="date" id="date" name="date" placeholder="Enter date"> <br>
+                    <label for="phone">phone</label>
+                    <input type="text" id="phone" name="yourphone" placeholder="Enter phone number"> 
+                    <label for="fname">dob</label>
+                    <input type="date"  id="dob" name="birthdate" placeholder="Enter birthdate"><br>
+                    <label for="Department">department</label>
+                    <select id="department" name="department">
+                        <option val="1">Dental</option>
+                        <option val="2">Cardiology</option>
+                        <option val="3">Neurology</option>
+                        <option val="6">Birth</option>
+                        <option val="7">General</option>
+                      </select> 
+                      <label for="fname">gender</label>
+                    <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option></select>
+                    <label for="reason">reason</label>
+                    <textarea id="reason" name="reason" placeholder="Write something.." style="height:200px"></textarea><br>
+                    <label for="fname">userid</label>
+                    <input type="text"  id="userid" name="userid" placeholder="Enter id">
+                
+                    <input type="submit" class="btn-primary" value="Book">
+                  </form>
+                </div>
+                </div>
+             </main>
+  <!-- End Single Top Feature -->
+<br>
+<!--=========== END Top Feature SECTION ================-->
+
+
+     <!------------ Footer-Section ---------->
+     <footer id="contact">
+        <div class=" footer">
+          <div class="row mb-4 ">
+            <!--- Social-media --->
+            <div class="col-md-4 col-sm">
+              <div class="footer-social">
+                <div class="">
+                  <img src="./images/logo1.png" alt="">
+                </div>  
+                <div class="social ">
+                  <ul class="social_footer">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--- Services --->
+            <div class="col-md-6 contact">
+              <p>Get In Touch</p>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <!-- <h5 class="heading">Courses</h5> -->
+                  <ul class="services">
+                    <h5 class="heading mb-3">Services</h5>
+                    <li>Cardic Monitoring </li>
+                    <li>Rehabilitation</li>
+                    <li>General Care</li>
+                    <li>Surgery</li>
+                  </ul>
+                </div>
+  
+                <hr>
+                  
+                <!------ Address ------->
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <!-- <h5 class="heading">Contact</h5> -->
+                  <ul class="addr">
+                    <h5 class="heading mb-3">Contact</h5>
+                    <li>
+                      <span class="iconify" data-icon="carbon:location-filled" ></span>
+                      <p>47 Marc  <br> Flic en Flac, <br> Mauritius.</p>
+                    </li><br>
+                    <li>
+                      <span class="iconify" data-icon="fluent:mail-48-filled" ></span>
+                      <p>mail.sharonniteoutreach.com</p>
+                    </li><br>
+                    <li>
+                      <span class="iconify" data-icon="bx:bxs-phone" ></span>
+                      <p>57740321</p>
+                    </li>      
+                  </ul>
+                </div>
+  
+              </div>
+            </div>            
+          </div>
+          
+          <hr>
+          <!--- Privacy Policy--->
+          <div class="row mx-5" >
+            <div class="col-md-6 col-sm">
+              <div class="pull-left copyright">
+                <p><i class="fa fa-copyright"></i> 2023 sharonniteoutreach</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm">
+              <div class="policy">
+                <div class="list" >Terms of Use</div>
+                <div class="list" >Privacy Policy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!--=========== End Footer SECTION ================-->  
+      
+  <script>
+
+    const apiUrl = 'http://localhost:3000/appointment';
+    const apptForm = document.getElementById('appt-form');
+   
+    apptForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+    const phone = document.getElementById('phone').value;
+    const dob = document.getElementById('dob').value;
+    const department = document.getElementById('department').value;
+    const gender = document.getElementById('gender').value;
+    const reason = document.getElementById('reason').value;
+    const userId = document.getElementById('userid').value;
+
+    const formData = {
+    name: name,
+    email: email,
+    date: date,
+    phone: phone,
+    dob: dob,
+    department: department,
+    gender: gender,
+    reason: reason,
+    userId: userId
+  }
+   console.log(formData) 
+    const requestOptions = {
+      method: 'POST', 
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json',
+       },
+     
+    };
+  
+ fetch(apiUrl, requestOptions)
+      .then(response => {
+       return response.json()
+      })
+      .then(formData => {
+        alert(formData.message);
+        window.location.href = 'doctors.html'
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+
+    </script>        
+    </body>
+  </html>
